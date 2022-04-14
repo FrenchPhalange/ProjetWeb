@@ -16,69 +16,32 @@ class Dal
     public static function install()
     {
         global $wpdb;
-        $query = "CREATE TABLE IF NOT EXISTS {$wpdb->prefix}barrelfit_membres(" .
-            "id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY," .
-            "nom VARCHAR(150) NOT NULL," .
-            "email text NOT NULL," .
-            "age int NOT NULL," .
-            "taille int NOT NULL," .
-            "poid int NOT NULL);";
-        $wpdb->query($query);
-
-        $query = "INSERT INTO {$wpdb->prefix}barrelfit_membres VALUES(1,'kevin','kevin@email.com',18,170, 65),(2,'romain','romain@email.com',18,170, 65);";
-
-        $wpdb->query($query);
-
-        $query = "CREATE TABLE IF NOT EXISTS {$wpdb->prefix}barrelfit_coachs(" .
-            "id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY," .
-            "nom VARCHAR(150) NOT NULL," .
-            "email text NOT NULL," .
-            "age int NOT NULL);";
-
-        $wpdb->query($query);
-
-        $query = "INSERT INTO {$wpdb->prefix}barrelfit_coachs VALUES(1,'kevin','kevin@email.com',18),(2,'romain','romain@email.com',18);";
-
-        $wpdb->query($query);
 
         $query = "CREATE TABLE IF NOT EXISTS {$wpdb->prefix}barrelfit_recettes(" .
             "id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY," .
             "plat VARCHAR(150) NOT NULL," .
-            "ingredients VARCHAR(150) NOT NULL);";
-
-        $wpdb->query($query);
-
-        $query = "INSERT INTO {$wpdb->prefix}barrelfit_recettes VALUES(1,'plat 1,'pates oeufs'),(2,'plat 2','tomates flocons davoines');";
+            "ingredients VARCHAR(255) NOT NULL);";
 
         $wpdb->query($query);
     }
 
-    public static function uninstall($table)
+    public static function uninstall()
     {
         global $wpdb;
-        $wpdb->query("DROP TABLE IF EXISTS {$wpdb->prefix}$table;");
+        $wpdb->query("DROP TABLE IF EXISTS {$wpdb->prefix}barrelfit_recettes;");
     }
 
-    public function findAll($table)
+    public function findAll()
     {
-        $res = $this->myWPdb->get_results("SELECT * FROM {$this->myWPdb->prefix}$table;", ARRAY_A);
+        $res = $this->myWPdb->get_results("SELECT * FROM {$this->myWPdb->prefix}barrelfit_recettes;", ARRAY_A);
         return $res;
     }
 
     // MEMBRE
-    public function save($table)
+    public function save()
     {
         $test = true;
-        if ($table == "barrelfit_recettes") {
-            $array_var = ['plat', 'ingredients'];
-            echo "teue";
-        } else if ($table == "barrelfit_coachs") {
-
-            $array_var = ['nom','email','age'];
-        } else {
-            $array_var = ['nom', 'age', 'email', 'taille', 'poid'];
-        }
-        var_dump($array_var);
+            $array_var = ['plat','ingredients'];
         $insert = [];
         foreach ($array_var as $key) {
             if (!array_key_exists($key, $_POST) || empty($_POST[$key])) {
@@ -88,9 +51,9 @@ class Dal
             }
         }
         if ($test) {
-            $row = $this->myWPdb->get_row("select * from {$this->myWPdb->prefix}$table where nom = '" . $insert['nom'] . "';");
+            $row = $this->myWPdb->get_row("select * from {$this->myWPdb->prefix}barrelfit_recettes where nom = '" . $insert['nom'] . "';");
             if (is_null($row)) {
-                $this->myWPdb->insert("{$this->myWPdb->prefix}$table", $insert);
+                $this->myWPdb->insert("{$this->myWPdb->prefix}barrelfit_recettes", $insert);
             } else {
                 echo "Ce Membre existe déjà !";
             }
@@ -98,8 +61,9 @@ class Dal
             echo "Il y a un problème avec les données";
         }
     }
-    public function Delete($id, $table)
+    public function Delete($id)
     {
-        $this->myWPdb->query("DELETE FROM {$this->myWPdb->prefix}$table where id = " . $id . "");
+        $this->myWPdb->query("DELETE FROM {$this->myWPdb->prefix}barrelfit_recettes where id = " . $id . "");
     }
+
 }

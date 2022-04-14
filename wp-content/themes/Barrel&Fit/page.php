@@ -12,6 +12,10 @@ if (preg_match("/Piscine/", $title)) {
     $title = "Piscine";
 }
 
+?>
+<a href="/wp-admin/">Login</a>
+<?php
+
 echo "<title>$title</title>";
 
 switch ($title) {
