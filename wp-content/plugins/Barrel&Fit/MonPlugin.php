@@ -2,13 +2,13 @@
 
 /**
  * Plugin Name: Barrel & Fit
- * Description: Barrel & Fit (gestion des membres, des coachs et des recettes)
+ * Description: Barrel & Fit (gestion des recettes)
  * Author: ProjetPro
  * Version: 1.0
  */
 
-require plugin_dir_path(__FILE__) . '/Widgets/WP_Widget_Weather.php';
 require plugin_dir_path(__FILE__) . '/Widgets/WP_Widget_Promo.php';
+require plugin_dir_path(__FILE__) . '/Widgets/WP_Widget_Sub.php';
 require plugin_dir_path(__FILE__) . '/Data/Dal.php';
 
 
@@ -24,9 +24,8 @@ class MonPlugin
         register_uninstall_hook(__FILE__, array('Dal', 'uninstall'));
 
         add_action('widgets_init', function () {
-
-            register_widget('WP_Widget_Weather');
             register_widget('WP_Widget_Promo');
+            register_widget('WP_Widget_Sub');
         });
 
         add_action('wp_enqueue_scripts', array($this, 'plugin_scripts'));
@@ -58,6 +57,7 @@ class MonPlugin
     {
         $dal = new Dal();
         $page = $_REQUEST['page'];
+        
         echo  "<h2>" . $page . "</h2>";
         if (isset($_POST['plat']) && !empty($_POST['plat'])) {
             $dal->save("barrelfit_recettes");
@@ -66,7 +66,6 @@ class MonPlugin
 ?>
         <table class="widefat fixed" cellspacing="0">
             <tr>
-                <th class="manage-column column-columnname">ID</th>
                 <th class="manage-column column-columnname">Images</th>
                 <th class="manage-column column-columnname">Plats</th>
                 <th class="manage-column column-columnname">Ingredients</th>
@@ -78,14 +77,11 @@ class MonPlugin
                 $dal->Delete($id, "barrelfit_recettes");
             }
             foreach ($dal->findAll("barrelfit_recettes") as $line) {
-                $url = "https://www.themealdb.com/api/json/v1/1/search.php?s=". $line['plat'] ."";
-
-                $url = file_get_contents($url);
+                $url = file_get_contents("https://www.themealdb.com/api/json/v1/1/search.php?s=". $line['plat']);
 
                 $url = json_decode($url, true);
             ?>
                 <tr>
-                    <td><?= $line['id'] ?></td>
                     <td><img width='150px' src='<?php echo $url['meals'][0]['strMealThumb'] ?>'></td>
                     <td><?= $line['plat'] ?></td>
                     <td><?= $line['ingredients'] ?></td>
