@@ -22,6 +22,13 @@ class Dal
             "plat VARCHAR(150) NOT NULL," .
             "ingredients VARCHAR(255) NOT NULL);";
 
+        $wpdb->query($query);        
+        
+        $query = "CREATE TABLE IF NOT EXISTS {$wpdb->prefix}barrelfit_members(" .
+            "id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY," .
+            "nom VARCHAR(150) NOT NULL," .
+            "activity VARCHAR(150) NOT NULL);";
+
         $wpdb->query($query);
     }
 

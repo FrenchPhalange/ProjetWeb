@@ -1,9 +1,11 @@
-<?php get_header();
-?>
 <title>Home | Barrel & Fit</title>
-<main>
-    <h3>Elements du home</h3>
+<?php get_header();
 
- 
-</main>
+if (is_active_sidebar('header')) {
+    dynamic_sidebar('header');
+}
+?>
+
+
+
 <?php get_footer(); ?>
