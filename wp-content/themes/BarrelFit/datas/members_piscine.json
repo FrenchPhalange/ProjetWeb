@@ -1,0 +1,28 @@
+{
+  "Coach 1": {
+    "name": "Julie",
+    "membres": {
+      "1": {
+        "name": "membre 1",
+        "age": 18
+      },
+      "2": {
+        "name": "membre 2",
+        "age": 20
+      }
+    }
+  },
+  "Coach 2": {
+    "name": "Julie",
+    "membres": {
+      "1": {
+        "name": "membre 1",
+        "age": 18
+      },
+      "2": {
+        "name": "membre 2",
+        "age": 20
+      }
+    }
+  }
+}
