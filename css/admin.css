@@ -1,0 +1,96 @@
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    justify-content: center;
+    flex-direction: column;
+}
+div.menu_admin{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    padding: 20px 0;
+}
+form.search-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form.search-form button{
+    margin: 0;
+}
+h2.title-view{
+    color: white;
+    margin-bottom: 20px;
+}
+div.cards {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+div.card {
+    width: 350px;
+    padding: 20px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    flex-direction: column;
+    border: 2px solid grey;
+    margin: 10px;
+}
+div.card button{
+    padding: 10px 10px;
+    width: auto;
+}
+div.card>* {
+    margin: 10px 0;
+}
+
+button.btn-delete {
+    background-color: rgb(217, 9, 9);
+    padding: 10px 17px;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+div.menu_admin > a{
+    color: white;
+    transition: all 0.5;
+    text-decoration: underline 2px;
+    text-underline-offset: 2px;
+}
+div.menu_admin > a:hover{
+    transition: all 0.5s;
+    color: orange;
+}
+select {
+    padding: 8px 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+button.btn-search {
+    padding: 9px 17px;
+    color: #fff;
+    border: 2px solid transparent;
+    background-color: rgb(38, 70, 81);
+    cursor: pointer;
+}
+
+button {
+    transition: all 0.5s;
+}
+
+button:hover {
+    transition: all 0.5s;
+    opacity: 0.9;
+}

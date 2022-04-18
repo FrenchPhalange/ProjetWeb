@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+::placeholder {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    resize: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:invalid {
+    border: red solid 3px;
+}
+input:valid{
+    border: blue solid 3px;
+}
+.hidden{
+    display: none;
+}
