@@ -110,9 +110,6 @@ div.signin > form{
 div.signin > form > * {
     margin: 10px;
 }
-div.signin > form > h2{
-    color: white !important;
-}
 header form > * {
     margin: 10px;
 }
