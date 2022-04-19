@@ -5,7 +5,16 @@ $_GLOBALS['login'] =  false;
 $title = "Home Page";
 include_once "../template/header.php";
 include_once "../widgets/_AddMember.php";
+
+
 ?>
+<div class="signin">
+        <?php
+
+        addMember();
+
+        ?>
+</div>
 <main>
         <!-- SECTION 1 -->
         <section class="section section-1">

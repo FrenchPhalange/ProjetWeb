@@ -267,7 +267,7 @@ function TestLog($login = false)
 
         $log = "<a href='/pages/home.php' class='btn-logout'>Logout</a>";
     } else {
-        $log =  "<div><button class='btn-signin'>Sign in</button>";
+        $log =  "<div class='btns-log-sign'><button class='btn-signin'>Sign in</button>";
         $log .=  "<button class='btn-login'>Login</button></div>";
     }
     echo $log;

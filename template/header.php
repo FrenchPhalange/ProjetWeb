@@ -1,12 +1,13 @@
 <?php
 require_once "../utils/functions.php";
 require_once "../widgets/_Login.php";
+$error = "";
 
 if (isset($_GET['sub_login'])) {
-  if (LoginHome("adminK", "adminK")) {
+  if (LoginHome($_GET['user'], $_GET['pass'])) {
     header("Location: /pages/admin.php?admin=sudo");
   } else {
-    header("Location: /pages/admin.php");
+    header("Location: /pages/home.php");
   }
 }
 

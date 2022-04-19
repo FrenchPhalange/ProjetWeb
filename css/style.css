@@ -23,7 +23,7 @@ html {
 header {
     display: flex;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px;
     width: 100%;
     background-color: var(--secondary-color);
     justify-content: space-between;
@@ -62,10 +62,62 @@ menu.show {
 }
 
 header div.form-login{
-    display: none;
+    position: absolute;
+    top: 0%;
+    transform: translateY(-100%);
+    transition: all 0.5s;
+    background-color: var(--secondary-color);
+    padding: 20px 10px;
+    right: 0px;
 }
-header div.form-login-active{
-    display: block;
+header button{
+    width: 200px;
+    padding: 8px 5px;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+div.btns-log-sign{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 480px;
+}
+header form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    width: 100%;    
+}
+div.signin{
+    position: absolute;
+    top: 0;
+    right: 230px;
+    transition: 0.5s;
+    transform: translateY(-100%);
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+div.signin > form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+div.signin > form > * {
+    margin: 10px;
+}
+div.signin > form > h2{
+    color: white !important;
+}
+header form > * {
+    margin: 10px;
+}
+header div.form-login-active, div.form-signin-active{
+    transform: translateY(0%);
 }
 /* FOOTER */
 

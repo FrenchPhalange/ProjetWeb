@@ -39,7 +39,7 @@ function AddMember()
     foreach ($activities as $activity) {
         NumberActivityHere($activity[0], $activity[1]);
     }
-    $people = [['Melanie Carred', 15], ['Stephane Marin', 15], ['Julien Stephan', 1], ['Celia Cazo', 1]];
+    $people = [['Melanie Carred', 14], ['Stephane Marin', 14], ['Julien Stephan', 1], ['Celia Cazo', 1]];
     foreach ($people as $person) {
         NumberPersonHere($person[0], $person[1]);
     }
