@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.28, for Linux (x86_64)
 --
--- Host: 127.0.0.1    Database: lamp
+-- Host: 127.0.0.1    Database: BarrelFit
 -- ------------------------------------------------------
 -- Server version	5.7.29
 
@@ -47,8 +47,8 @@ DROP TABLE IF EXISTS `login`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `login` (
-  `user` varchar(250) DEFAULT NULL,
-  `pass` varchar(45) DEFAULT NULL
+  `user` text DEFAULT NULL,
+  `pass` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
