@@ -5,7 +5,6 @@ $_GLOBALS['login'] =  false;
 $title = "Home Page";
 include_once "../template/header.php";
 include_once "../widgets/_AddMember.php";
-
 ?>
 <main>
         <!-- SECTION 1 -->

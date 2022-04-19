@@ -26,7 +26,7 @@ function is_admin($admin)
  */
 function findAll(array $what = [], string $table = "", string $where = "")
 {
-    $pdo = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
+    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
     if ($where) {
@@ -57,7 +57,7 @@ function findAll(array $what = [], string $table = "", string $where = "")
  */
 function insertTable(string $table = "", string $values = "")
 {
-    $pdo = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
+    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     $test = findAll(["fullname"], "members", "fullname = '" . $_POST['fullname'] . "' and age = '" . $_POST['age'] . "' and activity = '" . $_POST['activity'] . "' ");
     foreach ($test as $t) {
@@ -98,7 +98,7 @@ function insertTable(string $table = "", string $values = "")
 function CreateTable(string $table_name = "", array $columns = [["NAME" => "", "TYPE" => ""]])
 {
 
-    $pdo = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
+    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 
     $query = "CREATE TABLE " . $table_name . "(";
@@ -121,7 +121,7 @@ function CreateTable(string $table_name = "", array $columns = [["NAME" => "", "
 function TruncateTable(string $table = "")
 {
 
-    $pdo = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
+    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
 
     $query = "TRUNCATE TABLE " . $table . "";
     $querystatement = $pdo->prepare($query);
@@ -131,7 +131,7 @@ function TruncateTable(string $table = "")
 
 function RemovePerson($table = "", $id)
 {
-    $pdo = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
+    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
 
     $query = "DELETE FROM  " . $table . "  WHERE id = " . $id . ";";
     $querystatement = $pdo->prepare($query);
@@ -148,7 +148,7 @@ function RemovePerson($table = "", $id)
  */
 function CardClub($table = "", $cardname)
 {
-    $pdo = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
+    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     $query = "SELECT * FROM " . $table . ";";
     $querystatement = $pdo->prepare($query);
@@ -192,7 +192,7 @@ function CardClub($table = "", $cardname)
  */
 function SearchBy($table = "", $search = "")
 {
-    $pdo = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
+    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     $query = "SELECT * FROM " . $table . " WHERE $search;";
     $querystatement = $pdo->prepare($query);

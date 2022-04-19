@@ -2,7 +2,7 @@
 
 function LoginHome($username, $password){
 
-    $tet = findAll(['username','password'], "login","username = '".$username."' AND password = '".$password."' ");
+    $tet = findAll(['user','pass'], "login","user = '".$username."' AND pass = '".$password."' ");
     
     foreach($tet as $t){
         if($t == 1){
