@@ -51,7 +51,9 @@ menu {
     width: 100%;
     padding: 20px;
 }
-
+a.logo-website{
+    width: 200px;
+}
 menu>* {
     color: rgb(0, 0, 0);
 }
@@ -60,15 +62,26 @@ menu.show {
     z-index: 50;
     transform: translateX(0%);
 }
-
+button.btn-login,button.btn-signin{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button.btn-signin i{
+    transform: rotate(-180deg);
+}
 header div.form-login{
     position: absolute;
     top: 0%;
+    height: 276px;
     transform: translateY(-100%);
     transition: all 0.5s;
     background-color: var(--secondary-color);
     padding: 20px 10px;
-    right: 0px;
+    right: 250px;
+}
+header i {
+    font-size: 20px;
 }
 header button{
     width: 200px;
@@ -83,7 +96,8 @@ div.btns-log-sign{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 480px;
+    flex-direction: column;
+    gap: 10px;
 }
 header form{
     display: flex;
@@ -113,8 +127,13 @@ div.signin > form > * {
 header form > * {
     margin: 10px;
 }
-header div.form-login-active, div.form-signin-active{
+header div.form-login-active{
     transform: translateY(0%);
+    box-shadow: 5px 2px 20px black;
+}
+div.form-signin-active{
+    transform: translateY(0%);
+    box-shadow: -5px 2px 20px black;
 }
 /* FOOTER */
 

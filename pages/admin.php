@@ -33,3 +33,4 @@ include_once "../template/header.php";
     }
     ?>
 </main>
+<script src="../js/script.js"></script>

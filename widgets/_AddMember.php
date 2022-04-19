@@ -35,11 +35,11 @@ function AddMember()
 
 ?>
     <?php
-    $activities = [['piscine', 30], ['fitness', 60], ['machines', 300]];
+    $activities = [['piscine', 30], ['fitness', 20], ['machines', 300]];
     foreach ($activities as $activity) {
         NumberActivityHere($activity[0], $activity[1]);
     }
-    $people = [['Melanie Carred', 14], ['Stephane Marin', 14], ['Julien Stephan', 1], ['Celia Cazo', 1]];
+    $people = [['Melanie Carred', 15], ['Stephane Marin', 15]];
     foreach ($people as $person) {
         NumberPersonHere($person[0], $person[1]);
     }

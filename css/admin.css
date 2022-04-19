@@ -94,3 +94,7 @@ button:hover {
     transition: all 0.5s;
     opacity: 0.9;
 }
+menu{
+    background-color: var(--main-color) !important;
+    width: 20% !important;
+}

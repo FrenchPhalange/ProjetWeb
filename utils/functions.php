@@ -247,7 +247,7 @@ function NumberActivityHere(string $activity = "", int $limit)
 {
     $findactivity = findAll(["activity"], "members", "activity = '" . $activity . "';");
     foreach ($findactivity as $nbrappear) {
-        if ($nbrappear >= $limit) {
+        if ($nbrappear > $limit) {
             echo "<h3 class='phrase hidden'>Le cour de " . $activity . " est complet</h3>";
         }
     }
@@ -256,7 +256,7 @@ function NumberPersonHere(string $person = "", int $limit)
 {
     $findactivity = findAll(["coach"], "members", "coach = '" . $person . "';");
     foreach ($findactivity as $nbrappear) {
-        if ($nbrappear >= $limit) {
+        if ($nbrappear > $limit) {
             echo "<h3 class='phrase hidden'>Le cour de " . $person . " est complet</h3>";
         }
     }
@@ -267,8 +267,8 @@ function TestLog($login = false)
 
         $log = "<a href='/pages/home.php' class='btn-logout'>Logout</a>";
     } else {
-        $log =  "<div class='btns-log-sign'><button class='btn-signin'>Sign in</button>";
-        $log .=  "<button class='btn-login'>Login</button></div>";
+        $log =  "<div class='btns-log-sign'><button class='btn-signin'><span class='text'>Sign in</span> <span class='right-signin'><i class='fa-solid fa-right-to-bracket'></i></span></button>";
+        $log .=  "<button class='btn-login'><span class='text'>Login</span> <span class='right-login'><i class='fa-solid fa-right-to-bracket'></i></span></button></div>";
     }
     echo $log;
 }

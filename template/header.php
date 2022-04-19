@@ -28,19 +28,29 @@ if (isset($_GET['sub_login'])) {
 </head>
 
 <body class="container">
-  <header id="top">
-    <a href="/pages/home.php">
-      <img src="/img/Logo.png" alt="logo website (stay strong)" title="logo website (stay strong)" />
-    </a>
-    <?php
-    TestLog($_GLOBALS['login']);
-    ?>
-
-    <div class="form-login">
-      <form action="" method="get" class="">
-        <input type="text" name="user" required>
-        <input type="password" name="pass" required>
-        <button name="sub_login">Login</button>
-      </form>
-    </div>
-  </header>
+<header id="top">
+      <menu>
+        <a href="/pages/home.php" class="link">Home</a>
+        <a href="/pages/piscine.php" class="link">Piscine</a>
+        <a href="/pages/fitness.php" class="link">Fitness</a>
+        <a href="/pages/machines.php" class="link">Machines</a>
+      </menu>
+      <a class="logo-website" href="index.html">
+        <img
+          src="../img/Logo.png"
+          alt="logo website (stay strong)"
+          title="logo website (stay strong)"
+        />
+      </a>
+      <i class="fas fa-bars"></i>
+      <?php
+      TestLog($_GLOBALS['login']);
+      ?>
+  <div class="form-login">
+    <form action="" method="get" class="">
+      <input type="text" name="user" required>
+      <input type="password" name="pass" required>
+      <button name="sub_login">Login</button>
+    </form>
+  </div>
+    </header>

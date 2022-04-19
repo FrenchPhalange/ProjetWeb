@@ -1,4 +1,16 @@
 @media screen and (min-width: 320px) and (max-width: 1024px) {
+    header button span.text{
+        display: none;
+    }
+    header button,a.logo-website{
+        width: auto;
+    }
+    header div.form-login{
+        right: 90px;
+    }
+    div.signin{
+        right: 60px;
+    }
     /* SECTION 1 */
     section.section-1 > *{
         justify-content: center;
