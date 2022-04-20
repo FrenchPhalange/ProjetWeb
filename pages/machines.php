@@ -7,28 +7,10 @@ include_once "../template/header.php";
 ?>
 
 <main>
-  <!-- SECTION 1 -->
-  <section class="section section-1">
-    <div class="left-section-1">
-      <img src="/css/img/intro.png" alt="" />
-    </div>
-    <div class="right-section-1">
-      <p class="title-section-1">Entraînements personnels</p>
-      <p class="subtitle-section-1">Nouveau niveau</p>
-      <p class="text-section-1">
-        Avez-vous besoins d'aide pour atteindre vos objectifs de mise en
-        forme ? Cliquez pour voir pourquoi un entraîneur personnel pourrait
-        être la réponse, avec des informations sur les prix, les avantages
-        et plus encore.
-      </p>
-      <button class="learn-more">Apprendre encore plus</button>
-    </div>
-  </section>
-  <!-- SECTION 1 -->
 
   <!-- SECTION 2 -->
   <section id="intro" class="section section-2">
-    <img src="/css/img/gym-1.jpg" alt="" />
+    <img src="../img/gym-1.jpg" alt="" />
     <div class="left-section-2">
       <p class="title-section-2">Les machines</p>
       <p class="subtitle-section-2">
@@ -41,13 +23,14 @@ include_once "../template/header.php";
   <!-- SECTION 2 -->
   <!-- SECTION 3 -->
   <section id="infos" class="section section-3">
-    <h2>Nos coachs</h2>
     <div>
-      <div class="right-section-3">
+    <h2>Nos coachs</h2>
+</div>
+      <div class="right-section-3" data-aos="fade-up-right">
         <div class="all-cards">
-          <div class="part-1-section-3" data-aos="fade-up-right">
+          <div class="part-1-section-3">
             <div class="card-info-page2">
-              <img src="../css/img/coach6.jpg" alt="" />
+              <img src="../img/coach6.jpg" alt="" />
               <p class="title-card-info">Kota Phaiminin</p>
               <p class="description-card-info">
                 - Diplomé par l’Etat <br>
@@ -55,9 +38,9 @@ include_once "../template/header.php";
               </p>
             </div>
           </div>
-          <div class="part-2-section-3" data-aos="fade-up-right">
+          <div class="part-2-section-3">
             <div class="card-info-page2">
-              <img src="../css/img/coach7.jpg" alt="" />
+              <img src="../img/coach7.jpg" alt="" />
               <p class="title-card-info">Martin Matin</p>
               <p class="description-card-info">
                 -Diplomé par l’Etat <br>
@@ -65,9 +48,9 @@ include_once "../template/header.php";
               </p>
             </div>
           </div>
-          <div class="part-3-section-3" data-aos="fade-up-right">
+          <div class="part-3-section-3">
             <div class="card-info-page2">
-              <img src="../css/img/coach8.jpg" alt="" />
+              <img src="../img/coach8.jpg" alt="" />
               <p class="title-card-info">Juste Leblanc</p>
               <p class="description-card-info">
                 -Diplomé par l’Etat <br>
@@ -75,10 +58,10 @@ include_once "../template/header.php";
               </p>
             </div>
           </div>
-          <div class="part-3-section-3" data-aos="fade-up-right">
+          <div class="part-3-section-3">
             <div class="card-info-page2">
-              <img src="../css/img/coach9.jpg" alt="" />
-              <p class="title-card-info">Hubert Bonisseur de La Bath</p>
+              <img src="../img/coach9.jpg" alt="" />
+              <p class="title-card-info">Hubert de La Bath</p>
               <p class="description-card-info">
                 -Diplomé par l’Etat <br>
                 -specialité: tonification musculaire
@@ -87,13 +70,12 @@ include_once "../template/header.php";
           </div>
         </div>
       </div>
-    </div>
   </section>
   <!-- SECTION 3 -->
 
   <!-- SECTION 4 -->
   <section id="intro" class="section section-2">
-    <img src="../css/img/gym-7.jpg" alt="" />
+    <img src="../img/gym-7.jpg" alt="" />
     <div class="left-section-2">
       <p class="title-section-2">Notre salle est:</p>
       <p class="subtitle-section-2">
@@ -151,13 +133,13 @@ include_once "../template/header.php";
       </tr>
       <tr>
         <th scope="row">*</th>
-        <td< /td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+        <td> </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
       <tr>
         <th scope="row">14h-15h</th>
@@ -223,7 +205,7 @@ include_once "../template/header.php";
         <button class="read-more">lire la suite</button>
       </div>
       <div class="ReserveCard">
-        <img src="../css/img/coaching.jpg" alt="" class="imgResever" />
+        <img src="../img/coaching.jpg" alt="" class="imgResever" />
         <p class="Reserve">Reserve now</p>
       </div>
     </div>

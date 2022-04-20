@@ -1,4 +1,4 @@
-</main>
+
 <footer>
 <div class="footer-1">
         <p class="title-form">Avez-vous quelque chose à dire ?</p>
