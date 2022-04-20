@@ -8,7 +8,7 @@
 
 :root {
     --main-color: #F9550C;
-    --secondary-color: #DEDBE4;
+    --secondary-color: rgb(222, 219, 228);
     --font-main: 'Arial', serif;
 }
 
