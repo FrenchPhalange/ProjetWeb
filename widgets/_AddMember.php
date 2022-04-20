@@ -2,7 +2,7 @@
 function AddMember()
 {
     createTable('members', [["NAME" => "id", "TYPE" => "int PRIMARY KEY NOT NULL AUTO_INCREMENT,"], ["NAME" => "fullname", "TYPE" => "text(255),"], ["NAME" => "age", "TYPE" => "int(2),"], ["NAME" => "activity", "TYPE" => "text(255),"], ["NAME" => "date", "TYPE" => "text(255),"], ["NAME" => "coach", "TYPE" => "text(255)"]]);
-    ?>
+?>
     <h2>S'inscrire à une activité : </h2>
     <?php
     if (isset($_POST['submit'])) {
@@ -20,20 +20,21 @@ function AddMember()
             }
         }
         if (insertTable("members", "$values")) {
-            echo  "<script>
-                let count = 5;
-                setInterval(function() {
-                    count--;
-                    if (count == 0) {
-                        window.location = '/pages/home.php';
-                    }
-                }, 500);
-            </script>";
         } else {
+            echo "pas bien";
         }
+        echo  "<script>
+            let count = 5;
+            setInterval(function() {
+                count--;
+                if (count == 0) {
+                    window.location = '/pages/home.php';
+                }
+            }, 500);
+        </script>";
     }
 
-?>
+    ?>
     <?php
     $activities = [['piscine', 30], ['fitness', 20], ['machines', 300]];
     foreach ($activities as $activity) {

@@ -1,6 +1,18 @@
 <?php
 
 /**
+ * Connect to pdo
+ *
+ * @return void
+ */
+function Pdo()
+{
+    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+    return $pdo;
+}
+
+/**
  * Is admin ??
  *
  * @param [type] $admin
@@ -26,8 +38,7 @@ function is_admin($admin)
  */
 function findAll(array $what = [], string $table = "", string $where = "")
 {
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
-    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+    $pdo = Pdo();
 
     if ($where) {
         $query = "SELECT COUNT(*) FROM " . $table . " WHERE $where;";
@@ -57,8 +68,7 @@ function findAll(array $what = [], string $table = "", string $where = "")
  */
 function insertTable(string $table = "", string $values = "")
 {
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
-    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+    $pdo = Pdo();
     $test = findAll(["fullname"], "members", "fullname = '" . $_POST['fullname'] . "' and age = '" . $_POST['age'] . "' and activity = '" . $_POST['activity'] . "' ");
     foreach ($test as $t) {
     }
@@ -98,10 +108,9 @@ function insertTable(string $table = "", string $values = "")
 function CreateTable(string $table_name = "", array $columns = [["NAME" => "", "TYPE" => ""]])
 {
 
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
-    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+    $pdo = Pdo();
 
-    $query = "CREATE TABLE " . $table_name . "(";
+    $query = "IF EXIST CREATE TABLE " . $table_name . "(";
     foreach ($columns as $column) {
         $query .= $column['NAME'] . " ";
         $query .= $column['TYPE'] . "";
@@ -121,7 +130,7 @@ function CreateTable(string $table_name = "", array $columns = [["NAME" => "", "
 function TruncateTable(string $table = "")
 {
 
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    $pdo = Pdo();
 
     $query = "TRUNCATE TABLE " . $table . "";
     $querystatement = $pdo->prepare($query);
@@ -131,7 +140,7 @@ function TruncateTable(string $table = "")
 
 function RemovePerson($table = "", $id)
 {
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    $pdo = Pdo();
 
     $query = "DELETE FROM  " . $table . "  WHERE id = " . $id . ";";
     $querystatement = $pdo->prepare($query);
@@ -148,7 +157,7 @@ function RemovePerson($table = "", $id)
  */
 function CardClub($table = "", $cardname)
 {
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    $pdo = Pdo();
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     $query = "SELECT * FROM " . $table . ";";
     $querystatement = $pdo->prepare($query);
@@ -192,7 +201,7 @@ function CardClub($table = "", $cardname)
  */
 function SearchBy($table = "", $search = "")
 {
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    $pdo = Pdo();
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     $query = "SELECT * FROM " . $table . " WHERE $search;";
     $querystatement = $pdo->prepare($query);
@@ -232,7 +241,7 @@ function SearchBy($table = "", $search = "")
 function SearchForm()
 {
     ?>
-    <form action="" method="POST"  class="search-form">
+    <form action="" method="POST" class="search-form">
         <select name="activity" id="" class="form-control">
             <option value="fitness">Fitness</option>
             <option value="piscine">Piscine</option>
