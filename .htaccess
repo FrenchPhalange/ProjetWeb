@@ -1,1 +1,2 @@
-Redirect "/index.php" "/pages/home.php"
+Redirect /index.php /pages/home.php
+ErrorDocument 404 /pages/error.php
