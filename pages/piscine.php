@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../css/piscine.css">
 <?php 
 $_GLOBALS['login'] = false;
 $title = "Piscine Page";
@@ -192,6 +193,7 @@ include_once "../template/header.php";
     <!-- SECTION 6 -->
 </main>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../js/piscine.js"></script>
 <?php
 include_once "../template/footer.php";

@@ -98,3 +98,6 @@ menu{
     background-color: var(--main-color) !important;
     width: 20% !important;
 }
+.hidden{
+    display: none;
+}

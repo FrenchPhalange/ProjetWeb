@@ -212,7 +212,8 @@ include_once "../template/header.php";
 
   </section>
   <!-- SECTION 7 -->
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/machines.js"></script>
 </main>
 <?php
 include_once "../template/footer.php";

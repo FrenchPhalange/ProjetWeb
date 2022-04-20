@@ -275,6 +275,8 @@ function TestLog($login = false)
     if ($login != null && $login != false) {
 
         $log = "<a href='/pages/home.php' class='btn-logout'>Logout</a>";
+        $log .=  "<div class='btns-log-sign hidden'><button class='btn-signin'><span class='text'>Sign in</span> <span class='right-signin'><i class='fa-solid fa-right-to-bracket'></i></span></button>";
+        $log .=  "<button class='btn-login'><span class='text'>Login</span> <span class='right-login'><i class='fa-solid fa-right-to-bracket'></i></span></button></div>";
     } else {
         $log =  "<div class='btns-log-sign'><button class='btn-signin'><span class='text'>Sign in</span> <span class='right-signin'><i class='fa-solid fa-right-to-bracket'></i></span></button>";
         $log .=  "<button class='btn-login'><span class='text'>Login</span> <span class='right-login'><i class='fa-solid fa-right-to-bracket'></i></span></button></div>";
