@@ -31,6 +31,12 @@
         width: 60%;
         text-align: center;
     }
+    p.subtitle-section-page2 {
+        line-height: 22px;
+        padding: 20px;
+        font-size: 20px;
+        width: auto;
+    }
     
     /* SECTION 2 */
 
@@ -38,6 +44,15 @@
 
     div.all-cards{
         flex-wrap: wrap-reverse;
+    }
+    div.part-1-section-3,
+    div.part-2-section-3,
+    div.part-3-section-3 {
+        display: flex;
+        align-items: center;
+        height: 500px;
+        flex-direction: column;
+        justify-content: space-around;
     }
     /* SECTION 3 */
 
@@ -83,6 +98,13 @@
     }
     p.text-section-5 {
         width: 80%;
+    }
+    table {
+        border-collapse: collapse;
+        border: 2px solid rgb(200, 200, 200);
+        font-family: sans-serif;
+        letter-spacing: 0px;
+
     }
     /* SECTION 5 */
 
