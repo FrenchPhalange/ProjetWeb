@@ -35,7 +35,27 @@
         width: 300px;
         box-shadow: 25px 25px 0px var(--main-color);
     }
+    section.section-2a > img{
+        width: 300px;
+        box-shadow: 25px 25px 0px var(--main-color);
+    }
+    section.section-2b > img{
+        width: 300px;
+        box-shadow: 25px 25px 0px var(--main-color);
+    }
     div.left-section-2{
+        margin: 0;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    div.left-section-2a{
+        margin: 0;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    div.left-section-2b{
         margin: 0;
         margin-top: 50px;
         justify-content: center;
@@ -45,9 +65,31 @@
         width: 100%;
         text-align: center;
     }
+    div.left-section-2a> *{
+        width: 100%;
+        text-align: center;
+    }
+    div.left-section-2b> *{
+        width: 100%;
+        text-align: center;
+    }
+    div.left-section-2a> button{
+        width: 60%;
+        text-align: center;
+    }
     div.left-section-2 > button{
         width: 60%;
         text-align: center;
+    }
+    div.left-section-2b> button{
+        width: 80%;
+        text-align: center;
+    }
+    p.subtitle-section-page2 {
+        line-height: 22px;
+        padding: 20px;
+        font-size: 20px;
+        width: auto;
     }
     
     /* SECTION 2 */
@@ -57,6 +99,15 @@
     div.all-cards{
         flex-wrap: wrap-reverse;
     }
+    div.part-1-section-3,
+    div.part-2-section-3,
+    div.part-3-section-3 {
+        display: flex;
+        align-items: center;
+        height: 500px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     /* SECTION 3 */
 
     /* SECTION 4 */
@@ -64,7 +115,7 @@
     div.left-section-4{
         flex-direction: row;
         flex-wrap: wrap;
-        width: 80%;
+        width: 100%;
     }
     div.left-section-4 > img{
         height: 334px;
@@ -101,6 +152,13 @@
     }
     p.text-section-5 {
         width: 80%;
+    }
+    table {
+        border-collapse: collapse;
+        border: 2px solid rgb(200, 200, 200);
+        font-family: sans-serif;
+        letter-spacing: 0px;
+
     }
     /* SECTION 5 */
 
