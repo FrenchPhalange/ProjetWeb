@@ -64,6 +64,7 @@ menu.show {
 }
 button.btn-login,button.btn-signin{
     display: flex;
+    transition: 0.8s;
     align-items: center;
     justify-content: space-around;
 }
