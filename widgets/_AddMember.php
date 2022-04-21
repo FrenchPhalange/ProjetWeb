@@ -67,6 +67,7 @@ function AddMember()
             <option value="Priscillia Coven">Priscillia Coven</option>
         </select>
 
+        <input type="date" min="">
         <select name="coach" class="select_machines hidden">
             <option value="default" selected disabled>Choisissez votre coach</option>
             <option value="Rose Mariet">Rose Mariet</option>
