@@ -203,7 +203,7 @@ include_once "../template/header.php";
         <button class="read-more-page2">Vendredi</button>
         <p class="subtitle-section-page22">
             Place restantes : <br>
-            Lundi : 8/ 20 <br>
+            Lundi : 8 / 20 <br>
             Samedi : 18 / 20 <br>
         </p>
         </div>

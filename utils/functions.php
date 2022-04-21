@@ -300,3 +300,7 @@ function FindApi()
     </div>
 <?php
 }
+
+function RestPlace(){
+    
+}
