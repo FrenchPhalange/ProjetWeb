@@ -52,14 +52,7 @@ include_once "../template/header.php";
     </div>
   </section>
   <section id="recipes" class="section section-2ab">
-    <img src="<?php findAPi("strMealThumb"); ?>" alt="" />
-    <div class="left-section-2ab">
-      <p class="title-section-2ab"><i><?php findAPi("strMeal"); ?></i></p>
-      <p class="subtitle-section-2ab">
-        <i>Recettes & Ingrédients : <a href="<?php findAPi("strYoutube"); ?>" target="_blank">ici</a></i>
-      </p>
-      <button class="read-more generator-recipe"><a href="#recipes" style="color:var(--color-primary);">Générer un autre plat</a></button>
-    </div>
+    <?php findAPi() ?>
   </section>
   <section id="intro" class="section section-2b">
     <img src="../img/db2.jpg" alt="" />
