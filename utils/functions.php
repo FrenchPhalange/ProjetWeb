@@ -301,6 +301,14 @@ function FindApi()
 <?php
 }
 
-function RestPlace(){
-    
+function RestPlace($activity, $coach, $limit)
+{
+
+    $findactivity = findAll(['coach'], "members", "activity = '".$activity."' and coach = '".$coach."'");
+    foreach ($findactivity as $nbr){
+        $result =  $limit - $nbr;
+    }
+
+    echo $coach . " : " . $result . " / 20 <br>";
+
 }
