@@ -76,10 +76,10 @@ CREATE TABLE `members` (
   `fullname` text,
   `age` int(2) DEFAULT NULL,
   `activity` text,
-  `date` text,
   `coach` text,
+  `date` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,6 +88,7 @@ CREATE TABLE `members` (
 
 LOCK TABLES `members` WRITE;
 /*!40000 ALTER TABLE `members` DISABLE KEYS */;
+INSERT INTO `members` VALUES (1,'Kevin',18,'machines','Thursday 21st of April 2022 12:32:10 PM','Rose Mariet'),(2,'Kevin',18,'fitness','Julien Stephan','Thursday 21st of April 2022 01:25:30 PM');
 /*!40000 ALTER TABLE `members` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -124,4 +125,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-21 14:30:32
+-- Dump completed on 2022-04-21 15:56:40
