@@ -25,9 +25,10 @@ DROP TABLE IF EXISTS `coachs`;
 CREATE TABLE `coachs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `fullname` text,
+  `activity` varchar(150) DEFAULT NULL,
   `date` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,6 +37,7 @@ CREATE TABLE `coachs` (
 
 LOCK TABLES `coachs` WRITE;
 /*!40000 ALTER TABLE `coachs` DISABLE KEYS */;
+INSERT INTO `coachs` VALUES (1,'Stephane Marin','piscine','16-04-2022'),(2,'Julien Stephan','fitness','16-04-2022'),(3,'Melanie Carred','piscine','16-04-2022'),(4,'Rose Mariet','machines','16-04-2022'),(5,'John Advance','machines','16-04-2022'),(6,'Steve Abrel','machines','16-04-2022'),(7,'Celia Cazo','fitness','16-04-2022'),(8,'Juliette Stamina','machines','16-04-2022'),(9,'Priscillia Coven','fitness','16-04-2022');
 /*!40000 ALTER TABLE `coachs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -77,7 +79,7 @@ CREATE TABLE `members` (
   `date` text,
   `coach` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -86,7 +88,7 @@ CREATE TABLE `members` (
 
 LOCK TABLES `members` WRITE;
 /*!40000 ALTER TABLE `members` DISABLE KEYS */;
-INSERT INTO `members` VALUES (1,'Kevin',18,'piscine','Melanie Carred','Tuesday 19th of April 2022 07:50:33 AM');
+INSERT INTO `members` VALUES (1,'Kevin',18,'piscine','Tuesday 19th of April 2022 01:50:54 PM','Melanie Carred','18/02/2024');
 /*!40000 ALTER TABLE `members` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -101,7 +103,7 @@ CREATE TABLE `recipes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_api` int(5) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -110,6 +112,7 @@ CREATE TABLE `recipes` (
 
 LOCK TABLES `recipes` WRITE;
 /*!40000 ALTER TABLE `recipes` DISABLE KEYS */;
+INSERT INTO `recipes` VALUES (1,52880),(2,52850),(3,53000);
 /*!40000 ALTER TABLE `recipes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -122,4 +125,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-19 10:17:37
+-- Dump completed on 2022-04-21 10:31:13

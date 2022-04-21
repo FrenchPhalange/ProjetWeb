@@ -36,3 +36,9 @@ let data = [
       .querySelector(".part-2-section-4")
       .appendChild(div_car);
   }
+
+  let recipe_generator = document.querySelector(".generator-recipe");
+
+  recipe_generator.addEventListener('click', function(){
+    location.reload(true);
+  })

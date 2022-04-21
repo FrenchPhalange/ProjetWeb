@@ -1,8 +1,7 @@
 <?php
 function AddMember()
 {
-    createTable('members', [["NAME" => "id", "TYPE" => "int PRIMARY KEY NOT NULL AUTO_INCREMENT,"], ["NAME" => "fullname", "TYPE" => "text(255),"], ["NAME" => "age", "TYPE" => "int(2),"], ["NAME" => "activity", "TYPE" => "text(255),"], ["NAME" => "date", "TYPE" => "text(255),"], ["NAME" => "coach", "TYPE" => "text(255)"]]);
-    ?>
+?>
     <h2>S'inscrire à une activité : </h2>
     <?php
     if (isset($_POST['submit'])) {
@@ -20,26 +19,27 @@ function AddMember()
             }
         }
         if (insertTable("members", "$values")) {
-            echo  "<script>
-                let count = 5;
-                setInterval(function() {
-                    count--;
-                    if (count == 0) {
-                        window.location = '/pages/home.php';
-                    }
-                }, 500);
-            </script>";
         } else {
+            echo "pas bien";
         }
+        echo  "<script>
+            let count = 5;
+            setInterval(function() {
+                count--;
+                if (count == 0) {
+                    window.location = '/pages/home.php';
+                }
+            }, 500);
+        </script>";
     }
 
-?>
+    ?>
     <?php
-    $activities = [['piscine', 30], ['fitness', 60], ['machines', 300]];
+    $activities = [['piscine', 30], ['fitness', 20], ['machines', 300]];
     foreach ($activities as $activity) {
         NumberActivityHere($activity[0], $activity[1]);
     }
-    $people = [['Melanie Carred', 14], ['Stephane Marin', 14], ['Julien Stephan', 1], ['Celia Cazo', 1]];
+    $people = [['Melanie Carred', 15], ['Stephane Marin', 15]];
     foreach ($people as $person) {
         NumberPersonHere($person[0], $person[1]);
     }
@@ -77,7 +77,6 @@ function AddMember()
         <input type="hidden" name="date" value="<?php echo date('l jS \of F Y h:i:s A'); ?>">
         <button name="submit">S'inscrire</button>
     </form>
-    <script src="../js/addMember.js"></script>
 <?php
 }
 

@@ -1,6 +1,19 @@
 <?php
 
 /**
+ * Connect to pdo
+ *
+ * @return void
+ */
+function Pdo()
+{
+    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    // $pdo = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
+    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+    return $pdo;
+}
+
+/**
  * Is admin ??
  *
  * @param [type] $admin
@@ -26,8 +39,7 @@ function is_admin($admin)
  */
 function findAll(array $what = [], string $table = "", string $where = "")
 {
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
-    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+    $pdo = Pdo();
 
     if ($where) {
         $query = "SELECT COUNT(*) FROM " . $table . " WHERE $where;";
@@ -57,8 +69,7 @@ function findAll(array $what = [], string $table = "", string $where = "")
  */
 function insertTable(string $table = "", string $values = "")
 {
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
-    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+    $pdo = Pdo();
     $test = findAll(["fullname"], "members", "fullname = '" . $_POST['fullname'] . "' and age = '" . $_POST['age'] . "' and activity = '" . $_POST['activity'] . "' ");
     foreach ($test as $t) {
     }
@@ -98,10 +109,9 @@ function insertTable(string $table = "", string $values = "")
 function CreateTable(string $table_name = "", array $columns = [["NAME" => "", "TYPE" => ""]])
 {
 
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
-    $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+    $pdo = Pdo();
 
-    $query = "CREATE TABLE " . $table_name . "(";
+    $query = "IF EXIST CREATE TABLE " . $table_name . "(";
     foreach ($columns as $column) {
         $query .= $column['NAME'] . " ";
         $query .= $column['TYPE'] . "";
@@ -121,7 +131,7 @@ function CreateTable(string $table_name = "", array $columns = [["NAME" => "", "
 function TruncateTable(string $table = "")
 {
 
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    $pdo = Pdo();
 
     $query = "TRUNCATE TABLE " . $table . "";
     $querystatement = $pdo->prepare($query);
@@ -131,7 +141,7 @@ function TruncateTable(string $table = "")
 
 function RemovePerson($table = "", $id)
 {
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    $pdo = Pdo();
 
     $query = "DELETE FROM  " . $table . "  WHERE id = " . $id . ";";
     $querystatement = $pdo->prepare($query);
@@ -148,7 +158,7 @@ function RemovePerson($table = "", $id)
  */
 function CardClub($table = "", $cardname)
 {
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    $pdo = Pdo();
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     $query = "SELECT * FROM " . $table . ";";
     $querystatement = $pdo->prepare($query);
@@ -192,7 +202,7 @@ function CardClub($table = "", $cardname)
  */
 function SearchBy($table = "", $search = "")
 {
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    $pdo = Pdo();
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     $query = "SELECT * FROM " . $table . " WHERE $search;";
     $querystatement = $pdo->prepare($query);
@@ -232,7 +242,7 @@ function SearchBy($table = "", $search = "")
 function SearchForm()
 {
     ?>
-    <form action="" method="POST"  class="search-form">
+    <form action="" method="POST" class="search-form">
         <select name="activity" id="" class="form-control">
             <option value="fitness">Fitness</option>
             <option value="piscine">Piscine</option>
@@ -266,9 +276,31 @@ function TestLog($login = false)
     if ($login != null && $login != false) {
 
         $log = "<a href='/pages/home.php' class='btn-logout'>Logout</a>";
+        $log .=  "<div class='btns-log-sign hidden'><button class='btn-signin'><span class='text'>Sign in</span> <span class='right-signin'><i class='fa-solid fa-right-to-bracket'></i></span></button>";
+        $log .=  "<button class='btn-login'><span class='text'>Login</span> <span class='right-login'><i class='fa-solid fa-right-to-bracket'></i></span></button></div>";
     } else {
-        $log =  "<div class='btns-log-sign'><button class='btn-signin'>Sign in</button>";
-        $log .=  "<button class='btn-login'>Login</button></div>";
+        $log =  "<div class='btns-log-sign'><button class='btn-signin'><span class='text'>Sign in</span> <span class='right-signin'><i class='fa-solid fa-right-to-bracket'></i></span></button>";
+        $log .=  "<button class='btn-login'><span class='text'>Login</span> <span class='right-login'><i class='fa-solid fa-right-to-bracket'></i></span></button></div>";
     }
     echo $log;
+}
+function FindApi()
+{
+    $url = "https://www.themealdb.com/api/json/v1/1/random.php";
+    $themeal = file_get_contents($url);
+    $themeal = json_decode($themeal, true);
+?>
+    <img src="<?php echo $themeal['meals'][0]["strMealThumb"] ?>" alt="" />
+    <div class="left-section-2ab">
+        <p class="title-section-2ab"><i><?php echo $themeal['meals'][0]["strMeal"] ?></i></p>
+        <p class="subtitle-section-2ab">
+            <i>Recettes & Ingrédients : <a href="<?php echo $themeal['meals'][0]["strYoutube"] ?>" target="_blank">ici</a></i>
+        </p>
+        <button class="read-more generator-recipe"><a href="#recipes" style="color:var(--color-primary);">Générer un autre plat</a></button>
+    </div>
+<?php
+}
+
+function RestPlace(){
+    
 }
