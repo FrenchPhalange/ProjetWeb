@@ -12,7 +12,7 @@ include_once "../template/header.php";
           <p class="title-section-2">Fitness</p>
           <p class="subtitle-section-2">
             Venez rejoindre nos cours de fitness.
-            Tout les lundi et samedi, de --H à --H,
+            Tout les lundi et samedi (voir le planning pour plus de précision),
             soyez coacher par Stéphane, Stéphanie
             et Lionel. N’ayez pas peur et vener suer
             avec nous !
@@ -64,12 +64,9 @@ include_once "../template/header.php";
       <section id="intro"  class="section section-2">
         <img src="../img/fitness2.jpg" alt="" />
         <div class="left-section-2">
-          <p class="title-section-2">Nos cours sont:</p>
-          <p class="subtitle-section-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Tellus pellentesque felis gravida sed integer.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Tellus pellentesque felis gravida sed integer.
+          <p class="title-section-2">Pourquoi le faites-vous ?</p>
+          <p class="subtitle-section-2">   
+            Pour atteindre votre objectif ? Pour passer un bon moment entre amis ? Quelle que soit votre raison, le fitness est essentiel. Qu'il s'agisse d'une séance cardio, un cours collectifs, que vous soyez débutant ou confirmé. Qui que vous soyez, quel que soit votre niveau, nous sommes ouverts à tous ! Go For It.
           </p>
           <button class="read-more">lire la suite</button>
         </div>
@@ -79,7 +76,7 @@ include_once "../template/header.php";
       <section id="discover" class="section section-5">
         <p class="title-section-5">Le Planning</p>
         <table>
-          <caption>      *Tout les Lundis et Samedis de --H à --H, sauf jour férié
+          <caption>      *Tout les Lundis et Samedis de 9H à 19H, sauf jour férié
           </caption>
           <tr>
               <th scope="col"></th>
