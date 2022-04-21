@@ -31,8 +31,8 @@ include_once "../template/header.php";
         <p class="title-section-2">Piscine</p>
         <p class="subtitle-section-2">
             Venez rejoindre nos cours de water bike.
-            Tout les --, de --H à --H, Vener nombreux
-            pour ---- et ----. Vener pédaler et nager
+            Tout les Mardi et Vendredi (voir le planning pour plus de précision), Vener nombreux
+            pour Léo et Scott. Vener pédaler et nager
             avec nous, vous verrez c’est amusant !
         </p>
         <button class="read-more">lire la suite</button>
@@ -74,10 +74,12 @@ include_once "../template/header.php";
         <div class="left-section-2">
         <p class="title-section-2">Notre piscine</p>
         <p class="subtitle-section-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Tellus pellentesque felis gravida sed integer.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Tellus pellentesque felis gravida sed integer.
+        Le bassin de natation a une longueur de 25 mètres et une largeur de 12,15 mètres.
+        Elle est divisée en 6 couloirs.
+        La profondeur varie entre 1 mètre et 1,8 mètre. Le sol est en pente douce sur toute la longueur du bassin.
+        Deux plongeoirs sont disposés dans la grande profondeur.
+        Un local de rangement est partagé par les clubs.
+        Quatre vestiaires collectifs sont réservés à la piscine, dont deux sont accessible aux PMR (Personnes à Mobilité Réduite).
         </p>
         <button class="read-more">lire la suite</button>
         </div>
@@ -87,7 +89,7 @@ include_once "../template/header.php";
     <section id="discover" class="section section-5">
         <p class="title-section-5">Le Planning</p>
         <table>
-          <caption>      *Tout les Lundis et Samedis de --H à --H, sauf jour férié
+          <caption>      *Tout les Lundis et Samedis de 9H à 19H, sauf jour férié
         </caption>
         <tr>
             <th scope="col"></th>
