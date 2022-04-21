@@ -188,12 +188,14 @@ include_once "../template/header.php";
           <p class="subtitle-section-page2">
             Si vous souhaiter vous inscrire pour le prochain cours de fitness, c’est ici:
           </p>
-          <button class="read-more-page2">Lundi</button>
-          <button class="read-more-page2">Samedi</button>
+          <button class="read-more-page2">Julien</button>
+          <button class="read-more-page2">Celia</button>
+          <button class="read-more-page2">Priscilia</button>
           <p class="subtitle-section-page22">
             Place restantes : <br>
-            Lundi : <bold> 15</bold> / 20 <br>
-            Samedi : 15 / 20 <br>
+            Julien : <bold> 15</bold> / 20 <br>
+            Celia : 15 / 20 <br>
+            Priscilia : 15 / 20 <br>
           </p>
         </div>
       </section>
