@@ -13,8 +13,8 @@ include_once "../template/header.php";
           <p class="subtitle-section-2">
             Venez rejoindre nos cours de fitness.
             Tout les lundi et samedi (voir le planning pour plus de précision),
-            soyez coacher par Stéphane, Stéphanie
-            et Lionel. N’ayez pas peur et vener suer
+            soyez coacher par Celia, Priscilia
+            et Julien. N’ayez pas peur et vener suer
             avec nous !
           </p>
           <button class="read-more">lire la suite</button>
@@ -90,32 +90,32 @@ include_once "../template/header.php";
           </tr>
           <tr>
               <th scope="row">9h-10h</th>
-              <td class="coach1">Lionel</td>
+              <td class="coach1">Julien</td>
               <td></td>
-              <td class="coach3">Stéphane</td>
+              <td class="coach3">Celia</td>
               <td></td>
-              <td class="coach2">Stéphanie</td>
+              <td class="coach2">Priscilia</td>
               <td></td>
-              <td class="coach1">Lionel</td>
+              <td class="coach1">Julien</td>
           </tr>
           <tr>
               <th scope="row">10h-11h</th>
-              <td class="coach1">Lionel</td>
-              <td class="coach2">Stéphanie</td>
-              <td class="coach3">Stéphane</td>
-              <td class="coach1">Lionel</td>
-              <td class="coach2">Stéphanie</td>
-              <td class="coach3">Stéphane</td>
-              <td class="coach1">Lionel</td>
+              <td class="coach1">Julien</td>
+              <td class="coach2">Priscilia</td>
+              <td class="coach3">Celia</td>
+              <td class="coach1">Julien</td>
+              <td class="coach2">Priscilia</td>
+              <td class="coach3">Celia</td>
+              <td class="coach1">Julien</td>
           </tr>
           <tr>
               <th scope="row">11h-12h</th>
               <td></td>
-              <td class="coach2">Stéphanie</td>
+              <td class="coach2">Priscilia</td>
               <td></td>
-              <td class="coach1">Lionel</td>
+              <td class="coach1">Julien</td>
               <td></td>
-              <td class="coach3">Stéphane</td>
+              <td class="coach3">Celia</td>
               <td></td>
           </tr>
           <tr>
@@ -140,33 +140,33 @@ include_once "../template/header.php";
           </tr>
           <tr>
             <th scope="row">15h-16h</th>
-            <td class="coach2">Stéphanie</td>
+            <td class="coach2">Priscilia</td>
             <td></td>
-            <td class="coach1">Lionel</td>
+            <td class="coach1">Julien</td>
             <td></td>
-            <td class="coach3">Stéphane</td>
+            <td class="coach3">Celia</td>
             <td></td>
-            <td class="coach2">Stéphanie</td>
+            <td class="coach2">Priscilia</td>
           </tr>
           <tr>
             <th scope="row">16h-17h</th>
-            <td class="coach2">Stéphanie</td>
-            <td class="coach3">Stéphane</td>
-            <td class="coach1">Lionel</td>
-            <td class="coach2">Stéphanie</td>
-            <td class="coach3">Stéphane</td>
-            <td class="coach1">Lionel</td>
-            <td class="coach2">Stéphanie</td>
+            <td class="coach2">Priscilia</td>
+            <td class="coach3">Celia</td>
+            <td class="coach1">Julien</td>
+            <td class="coach2">Priscilia</td>
+            <td class="coach3">Celia</td>
+            <td class="coach1">Julien</td>
+            <td class="coach2">Priscilia</td>
           </tr>
           <tr>
             <th scope="row">17h-18h</th>
             <td></td>
-            <td class="coach3">Stéphane</td>
+            <td class="coach3">Celia</td>
             <td></td>
-            <td class="coach2">Stéphanie</td>
-            <td class="coach3">Stéphane</td>
-            <td class="coach1">Lionel</td>
-            <td class="coach2">Stéphanie</td>
+            <td class="coach2">Priscilia</td>
+            <td class="coach3">Celia</td>
+            <td class="coach1">Julien</td>
+            <td class="coach2">Priscilia</td>
           </tr>
           <tr>
             <th scope="row">18h-19h</th>
@@ -175,7 +175,7 @@ include_once "../template/header.php";
             <td></td>
             <td></td>
             <td></td>
-            <td class="coach1">Lionel</td>
+            <td class="coach1">Julien</td>
             <td></td>
           </tr>
       </table>
