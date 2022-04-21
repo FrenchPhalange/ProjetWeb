@@ -971,3 +971,6 @@ p.text-footer{
     margin-top: 20px;
 }
 /* FOOTER */
+.hidden{
+    display: none;
+}
