@@ -173,7 +173,6 @@ div.left-section-2 {
     height: 300px;
     width: 380px;
     border : solid var(--main-color);
-    border-top: 0px;
 }
 div.left-section-2a {
     display: flex;

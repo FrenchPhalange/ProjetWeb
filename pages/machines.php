@@ -41,7 +41,6 @@ include_once "../template/header.php";
       -Vélos elliptiques et steppers</br>
       -Vélos de spinning</br>
       -Tapis de course</br>
-      -Rameurs    
     </p>
       <button class="read-more">lire la suite</button>
     </div>
