@@ -47,7 +47,7 @@ include_once "../template/header.php";
             <div class="part-1-section-3" data-aos="fade-up-right">
             <div class="card-info-page2">
                 <img src="../img/coach4.jpg" alt="" />
-                <p class="title-card-info">Léo Ordman</p>
+                <p class="title-card-info">Stéphane Marin</p>
                 <p class="description-card-info">
                 - Diplomé par l’Etat <br>
                 - Spécialité : Natation & Water Polo
@@ -57,7 +57,7 @@ include_once "../template/header.php";
             <div class="part-2-section-3" data-aos="fade-up-right">
             <div class="card-info-page2">
                 <img src="../img/coach5.jpg" alt="" />
-                <p class="title-card-info">Scott McKenzie</p>
+                <p class="title-card-info">Mélanie Carred</p>
                 <p class="description-card-info">
                 -Diplomé par l’Etat <br>
                 -Specialité: Natation & Musculation

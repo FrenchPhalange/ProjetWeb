@@ -48,7 +48,7 @@ include_once "../template/header.php";
           <div class="part-1-section-3">
             <div class="card-info-page2">
               <img src="../img/coach6.jpg" alt="" />
-              <p class="title-card-info">Kota Phaiminin</p>
+              <p class="title-card-info">Rose Mariet</p>
               <p class="description-card-info">
                 - Diplomé par l’Etat <br>
                 - Specialité: plateau cardio
@@ -58,7 +58,7 @@ include_once "../template/header.php";
           <div class="part-2-section-3">
             <div class="card-info-page2">
               <img src="../img/coach7.jpg" alt="" />
-              <p class="title-card-info">Martin Matin</p>
+              <p class="title-card-info">John Advance</p>
               <p class="description-card-info">
                 -Diplomé par l’Etat <br>
                 -specialité: plateau muscu
@@ -68,7 +68,7 @@ include_once "../template/header.php";
           <div class="part-3-section-3">
             <div class="card-info-page2">
               <img src="../img/coach8.jpg" alt="" />
-              <p class="title-card-info">Juste Leblanc</p>
+              <p class="title-card-info">Steve Abrel</p>
               <p class="description-card-info">
                 -Diplomé par l’Etat <br>
                 -specialité: tonification musculaire
@@ -78,7 +78,7 @@ include_once "../template/header.php";
           <div class="part-3-section-3">
             <div class="card-info-page2">
               <img src="../img/coach9.jpg" alt="" />
-              <p class="title-card-info">Hubert de La Bath</p>
+              <p class="title-card-info">Juliette Stamina</p>
               <p class="description-card-info">
                 -Diplomé par l’Etat <br>
                 -specialité: tonification musculaire

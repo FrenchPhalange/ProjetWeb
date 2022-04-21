@@ -29,7 +29,7 @@ include_once "../template/header.php";
             <div class="part-1-section-3" data-aos="fade-up-right">
               <div class="card-info-page2">
                 <img src="../img/coach1.jpg" alt="" />
-                <p class="title-card-info">Lionel Plaza</p>
+                <p class="title-card-info">Julien Stephen</p>
                 <p class="description-card-info">
                   - Diplomé par l’Etat <br>
                   - Specialité: plateau cardio
@@ -39,7 +39,7 @@ include_once "../template/header.php";
             <div class="part-2-section-3" data-aos="fade-up-right">
               <div class="card-info-page2">
                 <img src="../img/coach3.jpg" alt="" />
-                <p class="title-card-info">Stefanie Messi</p>
+                <p class="title-card-info">Celia Cazo</p>
                 <p class="description-card-info">
                   -Diplomé par l’Etat <br>
                   -specialité: plateau muscu
@@ -49,7 +49,7 @@ include_once "../template/header.php";
             <div class="part-3-section-3" data-aos="fade-up-right">
               <div class="card-info-page2">
                 <img src="../img/coach2.jpg" alt="" />
-                <p class="title-card-info">Stéphane De Monaco</p>
+                <p class="title-card-info">Priscilia Coven</p>
                 <p class="description-card-info">
                   -Diplomé par l’Etat <br>
                   -specialité: tonification musculaire
