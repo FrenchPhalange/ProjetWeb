@@ -9,7 +9,7 @@ function AddMember()
         foreach ($_POST as $field => $val) {
             if ($field == 'submit') {
             } else {
-                if ($field == "date") {
+                if ($field == "rdv") {
 
                     $values .= "'$val'";
                 } else {
@@ -67,7 +67,6 @@ function AddMember()
             <option value="Priscillia Coven">Priscillia Coven</option>
         </select>
 
-        <input type="date" min="">
         <select name="coach" class="select_machines hidden">
             <option value="default" selected disabled>Choisissez votre coach</option>
             <option value="Rose Mariet">Rose Mariet</option>
@@ -76,6 +75,7 @@ function AddMember()
             <option value="Juliette Stamina">Juliette Stamina</option>
         </select>
         <input type="hidden" name="date" value="<?php echo date('l jS \of F Y h:i:s A'); ?>">
+        <input class="date-machines hidden" name="rdv" type="date" min="<?php date('l jS \of F Y h:i:s A'); ?>" max="2022-05-30">
         <button name="submit">S'inscrire</button>
     </form>
 <?php
