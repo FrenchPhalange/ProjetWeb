@@ -1,6 +1,7 @@
 <?php
 require_once "../utils/functions.php";
 require_once "../widgets/_Login.php";
+require_once "../widgets/_AddMember.php";
 $error = "";
 
 if (isset($_GET['sub_login'])) {
@@ -10,8 +11,14 @@ if (isset($_GET['sub_login'])) {
     header("Location: /pages/home.php");
   }
 }
-
 ?>
+<div class="signin">
+        <?php
+
+        addMember();
+
+        ?>
+</div>
 <!DOCTYPE html>
 <html lang="FR">
 
@@ -24,7 +31,6 @@ if (isset($_GET['sub_login'])) {
   <link rel="stylesheet" href="/css/style-responsive.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
 </head>
 
 <body class="container">
@@ -35,9 +41,9 @@ if (isset($_GET['sub_login'])) {
         <a href="/pages/fitness.php" class="link">Fitness</a>
         <a href="/pages/machines.php" class="link">Machines</a>
       </menu>
-      <a class="logo-website" href="index.html">
+      <a class="logo-website" href="home.php">
         <img
-          src="../img/Logo.png"
+          src="../img/logo.png"
           alt="logo website (stay strong)"
           title="logo website (stay strong)"
         />
@@ -54,21 +60,3 @@ if (isset($_GET['sub_login'])) {
     </form>
   </div>
     </header>
-      <!-- SECTION 1 -->
-  <section class="section section-1">
-    <div class="left-section-1">
-      <img src="../img/intro.png" alt="" />
-    </div>
-    <div class="right-section-1">
-      <p class="title-section-1">Entraînements personnels</p>
-      <p class="subtitle-section-1">Nouveau niveau</p>
-      <p class="text-section-1">
-        Avez-vous besoins d'aide pour atteindre vos objectifs de mise en
-        forme ? Cliquez pour voir pourquoi un entraîneur personnel pourrait
-        être la réponse, avec des informations sur les prix, les avantages
-        et plus encore.
-      </p>
-      <button class="learn-more">Apprendre encore plus</button>
-    </div>
-  </section>
-  <!-- SECTION 1 -->

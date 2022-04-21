@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="/css/machinestyle.css" />
-<link rel="stylesheet" href="/css/machinestyle-responsive.css" />
+<link rel="stylesheet" href="/css/machines.css" />
+<link rel="stylesheet" href="/css/machines-responsive.css" />
 <?php
 $_GLOBALS['login'] =  false;
 $title = "Machines Page";
@@ -7,7 +7,24 @@ include_once "../template/header.php";
 ?>
 
 <main>
-
+      <!-- SECTION 1 -->
+      <section class="section section-1">
+    <div class="left-section-1">
+      <img src="../img/intro.png" alt="" />
+    </div>
+    <div class="right-section-1">
+      <p class="title-section-1">Entraînements personnels</p>
+      <p class="subtitle-section-1">Nouveau niveau</p>
+      <p class="text-section-1">
+        Avez-vous besoins d'aide pour atteindre vos objectifs de mise en
+        forme ? Cliquez pour voir pourquoi un entraîneur personnel pourrait
+        être la réponse, avec des informations sur les prix, les avantages
+        et plus encore.
+      </p>
+      <button class="learn-more">Apprendre encore plus</button>
+    </div>
+  </section>
+  <!-- SECTION 1 -->
   <!-- SECTION 2 -->
   <section id="intro" class="section section-2">
     <img src="../img/gym-1.jpg" alt="" />

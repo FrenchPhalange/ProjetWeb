@@ -38,7 +38,9 @@ header {
 
 header img {
     width: 70px;
+    border-radius: 15px;
 }
+
 
 menu {
     display: flex;
@@ -52,7 +54,7 @@ menu {
     transition: all 0.7s;
     top: 0%;
     left: 0%;
-    height: 550px;
+    height: 565px;
     width: 100%;
     padding: 20px;
 }

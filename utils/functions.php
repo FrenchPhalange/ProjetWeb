@@ -7,7 +7,8 @@
  */
 function Pdo()
 {
-    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    // $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     return $pdo;
 }
@@ -256,7 +257,7 @@ function NumberActivityHere(string $activity = "", int $limit)
 {
     $findactivity = findAll(["activity"], "members", "activity = '" . $activity . "';");
     foreach ($findactivity as $nbrappear) {
-        if ($nbrappear > $limit) {
+        if ($nbrappear >= $limit) {
             echo "<h3 class='phrase hidden'>Le cour de " . $activity . " est complet</h3>";
         }
     }
@@ -265,7 +266,7 @@ function NumberPersonHere(string $person = "", int $limit)
 {
     $findactivity = findAll(["coach"], "members", "coach = '" . $person . "';");
     foreach ($findactivity as $nbrappear) {
-        if ($nbrappear > $limit) {
+        if ($nbrappear >= $limit) {
             echo "<h3 class='phrase hidden'>Le cour de " . $person . " est complet</h3>";
         }
     }
