@@ -31,8 +31,18 @@ include_once "../template/header.php";
     <div class="left-section-2">
       <p class="title-section-2">Les machines</p>
       <p class="subtitle-section-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eaque! Reiciendis neque ab harum, unde voluptatum ipsum at aliquid praesentium nesciunt, dicta perspiciatis architecto consequuntur libero quasi magnam natus. Cumque.
-      </p>
+      -Barres Musculation et Fitness</br>
+      -Poids Musculation et Fitness</br>
+      -Haltères Musculation et Fitness</br>
+      -Kettlebells et cordes ondulatoires</br>
+      -Médecine-balls et sacs lestés</br>
+      -Barres de traction</br>
+      -Vélos d'appartement</br>
+      -Vélos elliptiques et steppers</br>
+      -Vélos de spinning</br>
+      -Tapis de course</br>
+      -Rameurs    
+    </p>
       <button class="read-more">lire la suite</button>
     </div>
   </section>
@@ -96,8 +106,8 @@ include_once "../template/header.php";
     <div class="left-section-2">
       <p class="title-section-2">Notre salle est:</p>
       <p class="subtitle-section-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eaque! Reiciendis neque ab harum, unde voluptatum ipsum at aliquid praesentium nesciunt, dicta perspiciatis architecto consequuntur libero quasi magnam natus. Cumque.
-      </p>
+      Dotés d’équipements modernes sans cesse renouvelés, nos clubs offrent une variété d’activités pour tous les types d’entraînements: renforcement, tonification, relaxation, etc.    
+    </p>
       <button class="read-more">lire la suite</button>
     </div>
   </section>
@@ -107,7 +117,7 @@ include_once "../template/header.php";
   <section id="discover" class="section section-5">
     <p class="title-section-5">Nos horaire</p>
     <table>
-      <caption>*Tout les Lundis et Samedis de --H à --H, sauf jour férié</caption>
+      <caption>*Tout les Lundis et Samedis de 9H à 19H, sauf jour férié</caption>
       <tr>
         <th scope="col"></th>
         <th scope="col">Lundi</th>
@@ -218,7 +228,10 @@ include_once "../template/header.php";
     <div class="dual">
       <div class="Sceancetext">
         <p>Une scéance avec un coach peut vous aider à:</br></p>
-        <p class="textSceancetext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque ut id temporibus omnis nostrum, minus ipsam facilis odio doloribus ipsum molestias aut, sed tempora blanditiis eveniet repudiandae, voluptatum explicabo.</p>
+        <p class="textSceancetext">
+          -Dans un premier temps, le ou la coach évalue votre niveau sportif de base et prend en compte vos antécédents médicaux</br>
+          -Puis vous définissez ensmble un plan d'entraînement sur-mesure et progressif pour adapter l'effort à votre morphologie, à votre âge et à vos objectifs : performance sportive, santé, remise en forme ou perte de poids.</br>
+          -Durant une séance, votre coach privé, en plus de vous motiver et de vous encourager, vous donne toutes les explications nécessaires : comment réaliser l'exercice, quels muscles travaillent et pourquoi, comment rectifier une mauvaise position...</p>
         <button class="read-more">lire la suite</button>
       </div>
       <div class="ReserveCard">
