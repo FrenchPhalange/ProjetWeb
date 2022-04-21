@@ -32,7 +32,7 @@ include_once "../template/header.php";
         <p class="subtitle-section-2">
             Venez rejoindre nos cours de water bike.
             Tout les Mardi et Vendredi (voir le planning pour plus de précision), Vener nombreux
-            pour Léo et Scott. Vener pédaler et nager
+            pour Stéphane et Mélanie. Vener pédaler et nager
             avec nous, vous verrez c’est amusant !
         </p>
         <button class="read-more">lire la suite</button>
@@ -103,32 +103,32 @@ include_once "../template/header.php";
             </tr>
             <tr>
                 <th scope="row">9h-10h</th>
-                <td class="coach4">Léo</td>
+                <td class="coach4">Stéphane</td>
                 <td></td>
-                <td class="coach5">Scott</td>
+                <td class="coach5">Mélanie</td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td class="coach4">Léo</td>
+                <td class="coach4">Stéphane</td>
             </tr>
             <tr>
                 <th scope="row">10h-11h</th>
-                <td class="coach4">Léo</td>
+                <td class="coach4">Stéphane</td>
                 <td></td>
-                <td class="coach5">Scott</td>
-                <td class="coach4">Léo</td>
+                <td class="coach5">Mélanie</td>
+                <td class="coach4">Stéphane</td>
                 <td></td>
-                <td class="coach5">Scott</td>
-                <td class="coach4">Léo</td>
+                <td class="coach5">Mélanie</td>
+                <td class="coach4">Stéphane</td>
             </tr>
             <tr>
                 <th scope="row">11h-12h</th>
                 <td></td>
                 <td ></td>
                 <td></td>
-                <td class="coach4">Léo</td>
+                <td class="coach4">Stéphane</td>
                 <td></td>
-                <td class="coach5">Scott</td>
+                <td class="coach5">Mélanie</td>
                 <td></td>
             </tr>
             <tr>
@@ -155,30 +155,30 @@ include_once "../template/header.php";
             <th scope="row">15h-16h</th>
             <td ></td>
             <td></td>
-            <td class="coach4">Léo</td>
+            <td class="coach4">Stéphane</td>
             <td></td>
-            <td class="coach5">Scott</td>
+            <td class="coach5">Mélanie</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">16h-17h</th>
             <td></td>
-            <td class="coach5">Scott</td>
-            <td class="coach4">Léo</td>
+            <td class="coach5">Mélanie</td>
+            <td class="coach4">Stéphane</td>
             <td></td>
-            <td class="coach5">Scott</td>
-            <td class="coach4">Léo</td>
+            <td class="coach5">Mélanie</td>
+            <td class="coach4">Stéphane</td>
             <td></td>
         </tr>
         <tr>
             <th scope="row">17h-18h</th>
             <td></td>
-            <td class="coach5">Scott</td>
+            <td class="coach5">Mélanie</td>
             <td></td>
             <td></td>
-            <td class="coach5">Scott</td>
-            <td class="coach4">Léo</td>
+            <td class="coach5">Mélanie</td>
+            <td class="coach4">Stéphane</td>
             <td></td>
         </tr>
         <tr>
@@ -188,7 +188,7 @@ include_once "../template/header.php";
             <td></td>
             <td></td>
             <td></td>
-            <td class="coach4">Léo</td>
+            <td class="coach4">Stéphane</td>
             <td></td>
         </tr>
     </table>
@@ -201,12 +201,12 @@ include_once "../template/header.php";
         <p class="subtitle-section-page2">
             Si vous souhaiter vous inscrire pour le prochain cours de fitness, c’est ici:
         </p>
-        <button class="read-more-page2">Mardi</button>
-        <button class="read-more-page2">Vendredi</button>
+        <button class="read-more-page2">Mélanie</button>
+        <button class="read-more-page2">Stéphane</button>
         <p class="subtitle-section-page22">
             Place restantes : <br>
-            Lundi : 8 / 20 <br>
-            Samedi : 18 / 20 <br>
+            Mélanie : 8 / 20 <br>
+            Stéphane : 18 / 20 <br>
         </p>
         </div>
     </section>

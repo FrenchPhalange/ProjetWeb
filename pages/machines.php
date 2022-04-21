@@ -51,7 +51,7 @@ include_once "../template/header.php";
               <p class="title-card-info">Rose Mariet</p>
               <p class="description-card-info">
                 - Diplomé par l’Etat <br>
-                - Specialité: DÉVELOPPEMENT DE L’EXPLOSIVITÉ
+                - Specialité: Développement de l'explosivité
               </p>
             </div>
           </div>
@@ -60,8 +60,8 @@ include_once "../template/header.php";
               <img src="../img/coach7.jpg" alt="" />
               <p class="title-card-info">John Advance</p>
               <p class="description-card-info">
-                -Diplomé par l’Etat <br>
-                -specialité: DÉVELOPPEMENT DE LA FORCE
+                - Diplomé par l’Etat <br>
+                - Specialité: Développement de la force
               </p>
             </div>
           </div>
@@ -70,8 +70,8 @@ include_once "../template/header.php";
               <img src="../img/coach8.jpg" alt="" />
               <p class="title-card-info">Steve Abrel</p>
               <p class="description-card-info">
-                -Diplomé par l’Etat <br>
-                -specialité: DÉVELOPPEMENT DU VOLUME MUSCULAIRE
+                - Diplomé par l’Etat <br>
+                - Specialité: Développement du volume musculaire
               </p>
             </div>
           </div>
@@ -80,8 +80,8 @@ include_once "../template/header.php";
               <img src="../img/coach9.jpg" alt="" />
               <p class="title-card-info">Juliette Stamina</p>
               <p class="description-card-info">
-                -Diplomé par l’Etat <br>
-                -specialité: DÉVELOPPEMENT DE L’ENDURANCE
+                - Diplomé par l’Etat <br>
+                - Specialité: Développement de l'endurance
               </p>
             </div>
           </div>
@@ -120,33 +120,33 @@ include_once "../template/header.php";
       </tr>
       <tr>
         <th scope="row">9h-10h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach3">John</td>
+        <td class="coach4">Steve</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">10h-11h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach3">John</td>
+        <td class="coach4">Steve</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">11h-12h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach3">John</td>
+        <td class="coach4">Steve</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">*</th>
@@ -166,47 +166,47 @@ include_once "../template/header.php";
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">15h-16h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach4">Steve</td>
+        <td class="coach3">John</td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">16h-17h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach4">Steve</td>
+        <td class="coach3">John</td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">17h-18h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach4">Steve</td>
+        <td class="coach3">John</td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">18h-19h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach4">Steve</td>
+        <td class="coach3">John</td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach5">John & Steve</td>
       </tr>
     </table>
   </section>

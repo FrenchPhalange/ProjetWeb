@@ -104,6 +104,21 @@
         font-size: 5px;
         padding: 7px;
     }
+    th.coach1{
+        background-color: var(--main-color)
+    }
+    th.coach2{
+        background-color: var(--main-color)
+    }
+    th.coach3{
+        background-color: var(--main-color)
+    }
+    th.coach4{
+        background-color: var(--main-color)
+    }
+    th.coach5{
+        background-color: var(--main-color)
+    }
     /* SECTION 5 */
 
     /* SECTION 6 */
