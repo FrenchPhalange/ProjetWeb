@@ -306,9 +306,9 @@ function RestPlace($activity, $coach, $limit)
 
     $findactivity = findAll(['coach'], "members", "activity = '".$activity."' and coach = '".$coach."'");
     foreach ($findactivity as $nbr){
-        $result =  $limit - $nbr;
+        $result =  $nbr;
     }
 
-    echo $coach . " : " . $result . " / 20 <br>";
+    echo $coach . " : " . $result . " / " .$limit. "<br>";
 
 }
