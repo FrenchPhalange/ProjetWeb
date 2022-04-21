@@ -51,7 +51,7 @@ include_once "../template/header.php";
               <p class="title-card-info">Rose Mariet</p>
               <p class="description-card-info">
                 - Diplomé par l’Etat <br>
-                - Specialité: plateau cardio
+                - Specialité: DÉVELOPPEMENT DE L’EXPLOSIVITÉ
               </p>
             </div>
           </div>
@@ -61,7 +61,7 @@ include_once "../template/header.php";
               <p class="title-card-info">John Advance</p>
               <p class="description-card-info">
                 -Diplomé par l’Etat <br>
-                -specialité: plateau muscu
+                -specialité: DÉVELOPPEMENT DE LA FORCE
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ include_once "../template/header.php";
               <p class="title-card-info">Steve Abrel</p>
               <p class="description-card-info">
                 -Diplomé par l’Etat <br>
-                -specialité: tonification musculaire
+                -specialité: DÉVELOPPEMENT DU VOLUME MUSCULAIRE
               </p>
             </div>
           </div>
@@ -81,7 +81,7 @@ include_once "../template/header.php";
               <p class="title-card-info">Juliette Stamina</p>
               <p class="description-card-info">
                 -Diplomé par l’Etat <br>
-                -specialité: tonification musculaire
+                -specialité: DÉVELOPPEMENT DE L’ENDURANCE
               </p>
             </div>
           </div>
