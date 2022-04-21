@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../css/piscine.css">
+<link rel="stylesheet" href="../css/home.css">
 <?php
 $_GLOBALS['login'] = false;
 $title = "Piscine Page";
