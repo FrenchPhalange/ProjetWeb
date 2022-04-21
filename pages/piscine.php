@@ -30,10 +30,10 @@ include_once "../template/header.php";
         <div class="left-section-2">
             <p class="title-section-2">Piscine</p>
             <p class="subtitle-section-2">
-                Venez rejoindre nos cours de water bike.
-                Tout les Mardi et Vendredi (voir le planning pour plus de précision), Vener nombreux
-                pour Stéphane et Mélanie. Vener pédaler et nager
-                avec nous, vous verrez c’est amusant !
+            Venez rejoindre nos cours de waterbike.
+               Tous les Mardi et Vendredi (voir le planning pour plus de précision), Venez nombreux
+               pour Stéphane et Mélanie. Venez pédaler et nager
+               Avec nous, vous verrez c’est amusant !
             </p>
             <button class="read-more">lire la suite</button>
         </div>
