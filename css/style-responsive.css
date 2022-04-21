@@ -39,6 +39,12 @@
         width: 300px;
         box-shadow: 25px 25px 0px var(--main-color);
     }
+    section.section-2ab > img{
+        width: 300px;
+        border-radius: 200px;
+        border-style: solid;
+        border-color: var(--main-color);
+    }
     section.section-2b > img{
         width: 300px;
         box-shadow: 25px 25px 0px var(--main-color);

@@ -53,6 +53,16 @@ include_once "../template/header.php";
           <button class="read-more">lire la suite</button>
         </div>
       </section>
+      <section id="intro"  class="section section-2ab">
+        <img src="img/plat-2.jpg" alt="" />
+        <div class="left-section-2ab">
+          <p class="title-section-2ab"><i>*Nom du Plat*</i></p>
+          <p class="subtitle-section-2ab">
+            <i>Recettes & Ingrédients : <a href="https://www.youtube.com/watch?v=EC64uo6tmAI" target="_blank">ici</a></i>
+          </p>
+          <button class="read-more">Générer un autre plat</button>
+        </div>
+      </section>
       <section id="intro"  class="section section-2b">
         <img src="../img/db2.jpg" alt="" />
         <div class="left-section-2b">
