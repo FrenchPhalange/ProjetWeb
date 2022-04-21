@@ -31,8 +31,17 @@ include_once "../template/header.php";
     <div class="left-section-2">
       <p class="title-section-2">Les machines</p>
       <p class="subtitle-section-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eaque! Reiciendis neque ab harum, unde voluptatum ipsum at aliquid praesentium nesciunt, dicta perspiciatis architecto consequuntur libero quasi magnam natus. Cumque.
-      </p>
+      -Barres Musculation et Fitness</br>
+      -Poids Musculation et Fitness</br>
+      -Haltères Musculation et Fitness</br>
+      -Kettlebells et cordes ondulatoires</br>
+      -Médecine-balls et sacs lestés</br>
+      -Barres de traction</br>
+      -Vélos d'appartement</br>
+      -Vélos elliptiques et steppers</br>
+      -Vélos de spinning</br>
+      -Tapis de course</br>
+    </p>
       <button class="read-more">lire la suite</button>
     </div>
   </section>
@@ -48,40 +57,40 @@ include_once "../template/header.php";
           <div class="part-1-section-3">
             <div class="card-info-page2">
               <img src="../img/coach6.jpg" alt="" />
-              <p class="title-card-info">Kota Phaiminin</p>
+              <p class="title-card-info">Rose Mariet</p>
               <p class="description-card-info">
                 - Diplomé par l’Etat <br>
-                - Specialité: plateau cardio
+                - Specialité: Développement de l'explosivité
               </p>
             </div>
           </div>
           <div class="part-2-section-3">
             <div class="card-info-page2">
               <img src="../img/coach7.jpg" alt="" />
-              <p class="title-card-info">Martin Matin</p>
+              <p class="title-card-info">John Advance</p>
               <p class="description-card-info">
-                -Diplomé par l’Etat <br>
-                -specialité: plateau muscu
+                - Diplomé par l’Etat <br>
+                - Specialité: Développement de la force
               </p>
             </div>
           </div>
           <div class="part-3-section-3">
             <div class="card-info-page2">
               <img src="../img/coach8.jpg" alt="" />
-              <p class="title-card-info">Juste Leblanc</p>
+              <p class="title-card-info">Steve Abrel</p>
               <p class="description-card-info">
-                -Diplomé par l’Etat <br>
-                -specialité: tonification musculaire
+                - Diplomé par l’Etat <br>
+                - Specialité: Développement du volume musculaire
               </p>
             </div>
           </div>
           <div class="part-3-section-3">
             <div class="card-info-page2">
               <img src="../img/coach9.jpg" alt="" />
-              <p class="title-card-info">Hubert de La Bath</p>
+              <p class="title-card-info">Juliette Stamina</p>
               <p class="description-card-info">
-                -Diplomé par l’Etat <br>
-                -specialité: tonification musculaire
+                - Diplomé par l’Etat <br>
+                - Specialité: Développement de l'endurance
               </p>
             </div>
           </div>
@@ -96,8 +105,8 @@ include_once "../template/header.php";
     <div class="left-section-2">
       <p class="title-section-2">Notre salle est:</p>
       <p class="subtitle-section-2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eaque! Reiciendis neque ab harum, unde voluptatum ipsum at aliquid praesentium nesciunt, dicta perspiciatis architecto consequuntur libero quasi magnam natus. Cumque.
-      </p>
+      Dotés d’équipements modernes sans cesse renouvelés, nos clubs offrent une variété d’activités pour tous les types d’entraînements: renforcement, tonification, relaxation, etc.    
+    </p>
       <button class="read-more">lire la suite</button>
     </div>
   </section>
@@ -107,7 +116,7 @@ include_once "../template/header.php";
   <section id="discover" class="section section-5">
     <p class="title-section-5">Nos horaire</p>
     <table>
-      <caption>*Tout les Lundis et Samedis de --H à --H, sauf jour férié</caption>
+      <caption>*Tout les Lundis et Samedis de 9H à 19H, sauf jour férié</caption>
       <tr>
         <th scope="col"></th>
         <th scope="col">Lundi</th>
@@ -120,33 +129,33 @@ include_once "../template/header.php";
       </tr>
       <tr>
         <th scope="row">9h-10h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach3">John</td>
+        <td class="coach4">Steve</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">10h-11h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach3">John</td>
+        <td class="coach4">Steve</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">11h-12h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach3">John</td>
+        <td class="coach4">Steve</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach2">Rose</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">*</th>
@@ -166,47 +175,47 @@ include_once "../template/header.php";
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">15h-16h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach4">Steve</td>
+        <td class="coach3">John</td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">16h-17h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach4">Steve</td>
+        <td class="coach3">John</td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">17h-18h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach4">Steve</td>
+        <td class="coach3">John</td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach5">John & Steve</td>
       </tr>
       <tr>
         <th scope="row">18h-19h</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach4">Steve</td>
+        <td class="coach3">John</td>
+        <td class="coach2">Rose</td>
+        <td class="coach1">Juliette</td>
+        <td class="coach5">John & Steve</td>
       </tr>
     </table>
   </section>
@@ -218,7 +227,10 @@ include_once "../template/header.php";
     <div class="dual">
       <div class="Sceancetext">
         <p>Une scéance avec un coach peut vous aider à:</br></p>
-        <p class="textSceancetext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque ut id temporibus omnis nostrum, minus ipsam facilis odio doloribus ipsum molestias aut, sed tempora blanditiis eveniet repudiandae, voluptatum explicabo.</p>
+        <p class="textSceancetext">
+          -Dans un premier temps, le ou la coach évalue votre niveau sportif de base et prend en compte vos antécédents médicaux</br>
+          -Puis vous définissez ensmble un plan d'entraînement sur-mesure et progressif pour adapter l'effort à votre morphologie, à votre âge et à vos objectifs : performance sportive, santé, remise en forme ou perte de poids.</br>
+          -Durant une séance, votre coach privé, en plus de vous motiver et de vous encourager, vous donne toutes les explications nécessaires : comment réaliser l'exercice, quels muscles travaillent et pourquoi, comment rectifier une mauvaise position...</p>
         <button class="read-more">lire la suite</button>
       </div>
       <div class="ReserveCard">

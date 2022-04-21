@@ -32,9 +32,9 @@ include_once "../template/header.php";
     <div class="left-section-2">
       <p class="title-section-2">Bienvenue au centre de remise en forme</p>
       <p class="subtitle-section-2">
-        Centre de remise en forme, piscine intérieure, pataugeoire, piscine
-        exterieur, salle de fitness et salle des machines guidé dans notre
-        établissement.
+      Centre de remise en forme, piscine intérieure, pataugeoire, piscine
+       extérieur, salle de fitness et salle des machines guidé dans notre
+       établissement.
       </p>
       <button class="read-more">lire la suite</button>
     </div>
@@ -44,9 +44,9 @@ include_once "../template/header.php";
     <div class="left-section-2a">
       <p class="title-section-2a">Avec des recettes adaptées</p>
       <p class="subtitle-section-2a">
-        Des plats faits spécialement pour vous,
-        Pour vos envies, tout en restant diététique et gourmand.
-        Recette spécialement préparé par Marmiton !
+      Des plats faits spécialement pour vous,
+       Pour vos envies, tout en restant diététique et gourmand.
+       Recette spécialement préparée par Marmiton !
       </p>
       <button class="read-more">lire la suite</button>
     </div>
@@ -59,13 +59,13 @@ include_once "../template/header.php";
     <div class="left-section-2b">
       <p class="title-section-2b">Avec des coachs diplomés</p>
       <p class="subtitle-section-2b">
-        Des coachs diplomés et entousiaste pour vos objectifs:</br>
-        -perte de poid</br>
-        -prise de masse</br>
-        -seche /régime</br>
-        -motivations</br>
-        -performance</br>
-        -confiance en soi
+      Des coachs diplomés et enthousiaste pour vos objectifs:</br>
+       -perte de poid</br>
+       -prise de masse</br>
+       -sèche /régime</br>
+       -motivations</br>
+       -performance</br>
+       -confiance en soi
       </p>
       <button class="read-more">DECOUVREZ NOS COACHS</button>
     </div>

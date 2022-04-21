@@ -183,6 +183,7 @@ function CardClub($table = "", $cardname)
                 echo "<h4> Registration for :  " . $ligne->activity . "</h4>";
                 echo "<h4>" . $ligne->age . " ans</h4>";
                 echo "<h5> Registration date : " . $ligne->date . "</h5>";
+                echo "<h5> Rdv : " . $ligne->rdv  . "</h5>";
             }
             ?>
             <form action="" method="POST">
@@ -301,6 +302,14 @@ function FindApi()
 <?php
 }
 
-function RestPlace(){
-    
+function RestPlace($activity, $coach, $limit)
+{
+
+    $findactivity = findAll(['coach'], "members", "activity = '".$activity."' and coach = '".$coach."'");
+    foreach ($findactivity as $nbr){
+        $result =  $nbr;
+    }
+
+    echo $coach . " : " . $result . " / " .$limit. "<br>";
+
 }

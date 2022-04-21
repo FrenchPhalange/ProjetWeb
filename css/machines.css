@@ -163,7 +163,7 @@ div.left-section-2 {
     justify-content: space-around;
     flex-direction: column;
     background-color: white;
-    height: 300px;
+    height: 350px;
     width: 380px;
 }
 div.left-section-2a {
@@ -428,7 +428,6 @@ section.section-4 {
 
 .left-section-2{
     border: solid var(--main-color);
-    border-top: 0;
 }
 
 div.left-section-4 {
@@ -972,3 +971,6 @@ p.text-footer{
     margin-top: 20px;
 }
 /* FOOTER */
+.hidden{
+    display: none;
+}
