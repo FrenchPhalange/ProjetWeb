@@ -11,11 +11,12 @@ include_once "../template/header.php";
         <div class="left-section-2">
           <p class="title-section-2">Fitness</p>
           <p class="subtitle-section-2">
-            Venez rejoindre nos cours de fitness.
-            Tout les lundi et samedi (voir le planning pour plus de précision),
-            soyez coacher par Celia, Priscilia
-            et Julien. N’ayez pas peur et vener suer
-            avec nous !
+          Venez rejoindre nos cours de fitness.
+           Tous les lundi et samedi (voir le planning pour plus de précision),
+           soyez coacher par Celia, Priscilia
+           et Julien. N’ayez pas peur et venez suer
+           avec nous !
+
           </p>
           <button class="read-more">lire la suite</button>
         </div>
@@ -186,7 +187,7 @@ include_once "../template/header.php";
         <div class="left-section-page2">
           <p class="title-section-page2">Inscription</p>
           <p class="subtitle-section-page2">
-            Si vous souhaiter vous inscrire pour le prochain cours de fitness, c’est ici:
+          Si vous souhaitez vous inscrire pour le prochain cours de fitness, c’est ici:
           </p>
           <button class="read-more-page2">Julien</button>
           <button class="read-more-page2">Celia</button>
