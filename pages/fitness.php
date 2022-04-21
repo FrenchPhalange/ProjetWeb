@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../css/home.css">
 <?php 
 $_GLOBALS['login']=  false;
 $title = "Fitness Page";
@@ -6,7 +7,7 @@ include_once "../template/header.php";
 <main>
           <!-- SECTION 2 -->
           <section id="intro"  class="section section-2">
-        <img src="img/fitness.jpg" alt="" />
+        <img src="../img/fitness.jpg" alt="" />
         <div class="left-section-2">
           <p class="title-section-2">Fitness</p>
           <p class="subtitle-section-2">
@@ -27,7 +28,7 @@ include_once "../template/header.php";
           <div class="all-cards">
             <div class="part-1-section-3" data-aos="fade-up-right">
               <div class="card-info-page2">
-                <img src="img/coach1.jpg" alt="" />
+                <img src="../img/coach1.jpg" alt="" />
                 <p class="title-card-info">Lionel Plaza</p>
                 <p class="description-card-info">
                   - Diplomé par l’Etat <br>
@@ -37,7 +38,7 @@ include_once "../template/header.php";
             </div>
             <div class="part-2-section-3" data-aos="fade-up-right">
               <div class="card-info-page2">
-                <img src="img/coach3.jpg" alt="" />
+                <img src="../img/coach3.jpg" alt="" />
                 <p class="title-card-info">Stefanie Messi</p>
                 <p class="description-card-info">
                   -Diplomé par l’Etat <br>
@@ -47,7 +48,7 @@ include_once "../template/header.php";
             </div>
             <div class="part-3-section-3" data-aos="fade-up-right">
               <div class="card-info-page2">
-                <img src="img/coach2.jpg" alt="" />
+                <img src="../img/coach2.jpg" alt="" />
                 <p class="title-card-info">Stéphane De Monaco</p>
                 <p class="description-card-info">
                   -Diplomé par l’Etat <br>
@@ -61,7 +62,7 @@ include_once "../template/header.php";
       <!-- SECTION 3 -->
       <!-- SECTION 4 -->
       <section id="intro"  class="section section-2">
-        <img src="img/fitness2.jpg" alt="" />
+        <img src="../img/fitness2.jpg" alt="" />
         <div class="left-section-2">
           <p class="title-section-2">Nos cours sont:</p>
           <p class="subtitle-section-2">

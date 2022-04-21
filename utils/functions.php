@@ -7,8 +7,8 @@
  */
 function Pdo()
 {
-    // $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
-    $pdo = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
+    $pdo = new PDO('mysql:host=database;dbname=lamp', 'root', '');
+    // $pdo = new PDO('mysql:host=localhost;dbname=projetweb', 'root', '');
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
     return $pdo;
 }
@@ -283,4 +283,12 @@ function TestLog($login = false)
         $log .=  "<button class='btn-login'><span class='text'>Login</span> <span class='right-login'><i class='fa-solid fa-right-to-bracket'></i></span></button></div>";
     }
     echo $log;
+}
+function FindApi($what){
+    $url = "https://www.themealdb.com/api/json/v1/1/random.php";
+    $themeal = file_get_contents($url);
+    $themeal = json_decode($themeal, true);
+
+    echo $themeal['meals'][0][$what];
+
 }

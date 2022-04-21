@@ -194,6 +194,7 @@ div.text-form {
     width: 50%;
     display: flex;
     min-width: 250px;
+    gap: 30px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -207,7 +208,6 @@ div.text-form>p {
 
 div.social-media {
     display: flex;
-    margin-top: 50px;
     align-items: center;
     justify-content: space-between;
     width: 25%;
