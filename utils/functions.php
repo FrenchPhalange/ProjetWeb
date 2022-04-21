@@ -284,11 +284,23 @@ function TestLog($login = false)
     }
     echo $log;
 }
-function FindApi($what){
+function FindApi()
+{
     $url = "https://www.themealdb.com/api/json/v1/1/random.php";
     $themeal = file_get_contents($url);
     $themeal = json_decode($themeal, true);
+?>
+    <img src="<?php echo $themeal['meals'][0]["strMealThumb"] ?>" alt="" />
+    <div class="left-section-2ab">
+        <p class="title-section-2ab"><i><?php echo $themeal['meals'][0]["strMeal"] ?></i></p>
+        <p class="subtitle-section-2ab">
+            <i>Recettes & Ingrédients : <a href="<?php echo $themeal['meals'][0]["strYoutube"] ?>" target="_blank">ici</a></i>
+        </p>
+        <button class="read-more generator-recipe"><a href="#recipes" style="color:var(--color-primary);">Générer un autre plat</a></button>
+    </div>
+<?php
+}
 
-    echo $themeal['meals'][0][$what];
-
+function RestPlace(){
+    
 }
